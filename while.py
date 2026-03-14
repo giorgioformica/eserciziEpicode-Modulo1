@@ -7,11 +7,11 @@ while x <= 0:
     else :
         print("Non ha inserito un numero valido")
 
-# Esercizio 1 ciclo WHILE : calcolare la somma delle cifre di un numero
+# Esercizio 2 ciclo WHILE : calcolare la somma delle cifre di un numero
 
 x = 1
 somma = 0
-n = int(input("Inserisci un numero: "))
+n = int(input("SOMMA DI I NUMERI FINO A. Inserisci un numero: "))
 
 while x <= n:
     somma += x
@@ -19,3 +19,17 @@ while x <= n:
     print(somma)
 
 print(f"La somma di tutte le cifre fino a {n} è {somma}")
+
+# Variante Esercizio 2 ciclo WHILE : calcolare la somma delle cifre di un numero
+
+x= 0
+somma = 0
+n_str = input("SOMMA DELLE CIFRE. Inserisci un numero: ")
+cifre_numero = len(n_str)
+
+while x < cifre_numero:
+    cifra = int(n_str[x])
+    somma += cifra
+    x += 1
+
+print(f"La somma di tutte le cifre del numero {n_str} è {somma}")
